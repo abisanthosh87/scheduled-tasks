@@ -12,11 +12,12 @@ import random
 import datetime as dt
 import  pandas as pd
 import smtplib
+import os
 
 name_constant = "[NAME]"
 letters_list = ["letter_templates/letter_1.txt", "letter_templates/letter_2.txt", "letter_templates/letter_3.txt"]
-my_email = "mysticman004@gmail.com"
-my_password = "eznqnsfxvejuwwnm"
+my_email = os.environ.get("my_email")
+my_password = os.environ.get("my_password")
 
 
 now = dt.datetime.now()
