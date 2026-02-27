@@ -16,8 +16,8 @@ import os
 
 name_constant = "[NAME]"
 letters_list = ["letter_templates/letter_1.txt", "letter_templates/letter_2.txt", "letter_templates/letter_3.txt"]
-my_email = os.environ.get("my_email")
-my_password = os.environ.get("my_password")
+my_email = os.environ.get("MY_EMAIL")
+my_password = os.environ.get("MY_PASSWORD")
 
 
 now = dt.datetime.now()
